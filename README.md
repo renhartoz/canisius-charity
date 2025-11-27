@@ -8,7 +8,7 @@ Seat ticketing system
 
 #### Get user's seats
 
-```http
+```https
   GET /api/user/<user_email>
 ```
 
