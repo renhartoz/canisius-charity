@@ -101,7 +101,6 @@ def post_seat_status(seat_id):
 @app.route('/api/seat/<seat_id>/is_order', methods=['POST'])
 def post_seat_isOrder(seat_id):
     seat = Seat.query.get(seat_id)
-    data = request.get_json
     if seat:
         data = request.get_json()
         try:

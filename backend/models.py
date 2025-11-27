@@ -1,9 +1,7 @@
-import time
 from flask_login import UserMixin
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
-time_expired = 60
 
 class User(db.Model, UserMixin):
     __tablename__ = "users"
@@ -36,6 +34,3 @@ class Seat(db.Model, UserMixin):
         self.isVVIP = isVVIP
         self.owner_id = owner_id
         self.isOrder = isOrder
-        
-    def order_time_expired(self):
-        return (time.time() - self.order_timestamp) >= time_expired

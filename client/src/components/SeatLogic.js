@@ -131,7 +131,7 @@ const SeatLogic = () => {
 
   const closeTransaction = () => {
     setButtonPopupQRIS(false);
-    alert('You closed the popup without finishing the payment');
+    alert('Thank you for purchasing the seat ticket');
   }
 
   const pendingTransaction = () => {

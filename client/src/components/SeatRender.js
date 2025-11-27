@@ -45,7 +45,7 @@ function SeatLayout() {
 
     const intervalId = setInterval(fetchData, 300);
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   const renderSeatButtons = () => {
     return (
