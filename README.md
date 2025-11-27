@@ -18,7 +18,7 @@ Seat ticketing system
 
 #### Get seat details
 
-```http
+```https
   GET /api/seat/<seat_id>
 ```
 
@@ -28,7 +28,7 @@ Seat ticketing system
 
 #### Update seat owner
 
-```http
+```https
   POST /api/seat/<seat_id>/post
 ```
 
@@ -39,7 +39,7 @@ Seat ticketing system
 
 #### Update seat order status
 
-```http
+```https
   POST /api/seat/<seat_id>/is_order
 ```
 
@@ -50,7 +50,7 @@ Seat ticketing system
 
 #### Get all seats
 
-```http
+```https
   GET /api/seats
 ```
 
@@ -58,7 +58,7 @@ No parameters required. Returns a list of all seats.
 
 #### Get user by ID/Transaction ID
 
-```http
+```https
   GET /api/user/<transaction_id>
 ```
 
@@ -68,7 +68,7 @@ No parameters required. Returns a list of all seats.
 
 #### Create or Update User
 
-```http
+```https
   PUT /api/user/put
 ```
 
@@ -82,7 +82,7 @@ No parameters required. Returns a list of all seats.
 
 #### Get all users
 
-```http
+```https
   GET /api/users
 ```
 
@@ -90,7 +90,7 @@ No parameters required. Returns a list of all users.
 
 #### Process Transaction
 
-```http
+```https
   POST /api/transaction/<user_email>
 ```
 
@@ -101,7 +101,7 @@ No parameters required. Returns a list of all users.
 
 #### Generate Payment Token
 
-```http
+```https
   POST /api/tokenizer/<user_email>
 ```
 
