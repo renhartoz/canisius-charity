@@ -22,14 +22,6 @@ const Navbar = () => {
     localStorage.setItem('isSignIn', JSON.stringify(isSignIn));
   }, [isSignIn]);
 
-<<<<<<< HEAD:client/src/components/Navbar.js
-  const handleCallbackResponse = useCallback(response => {
-    var userObject = jwtDecode(response.credential);
-    console.log(userObject);
-    updateUser(userObject);
-    setIsSignIn(true);
-  }, [updateUser]);
-=======
   const handleCallbackResponse = useCallback(
     (response) => {
       var userObject = jwtDecode(response.credential);
@@ -40,7 +32,6 @@ const Navbar = () => {
     },
     [updateUser]
   );
->>>>>>> origin/canary:client/src/components/Navbar.jsx
 
   function handleSignOut(event) {
     updateUser({});
